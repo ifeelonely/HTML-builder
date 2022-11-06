@@ -14,7 +14,6 @@ const copyDir = function() {
             if(err) throw new Error('Can not copy the file');
         });
       };
-
     });
   });
 };
