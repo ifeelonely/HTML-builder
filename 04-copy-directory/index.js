@@ -10,7 +10,6 @@ const copyDir = function(__dirname, destFolder, srcFolder) {
     
     fs.readdir(path.join(__dirname, destFolder), (err, files) => {
       for(const file of files) {
-        console.log(file);
         fs.unlink(path.join(__dirname, destFolder, file), err => {
             if(err) console.log(err);     
         })
